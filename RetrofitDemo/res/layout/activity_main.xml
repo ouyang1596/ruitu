@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_dialog_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dialog_activity" />
+
+            <Button
+                android:id="@+id/btn_retrofit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="retrofit" />
+
+            <Button
+                android:id="@+id/btn_surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="surfaceView" />
+
+            <Button
+                android:id="@+id/btn_okhttp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OkHttp" />
+
+            <Button
+                android:id="@+id/btn_annonation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Annonation" />
+
+            <Button
+                android:id="@+id/btn_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="circle" />
+
+            <Button
+                android:id="@+id/btn_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="recycle_view" />
+
+            <Button
+                android:id="@+id/btn_cell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cell" />
+
+            <Button
+                android:id="@+id/btn_observer_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="wifi_change_listener" />
+
+            <Button
+                android:id="@+id/btn_check_net"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="check_net" />
+
+            <Button
+                android:id="@+id/btn_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fragment" />
+
+            <Button
+                android:id="@+id/btn_greendao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="greendao" />
+
+            <Button
+                android:id="@+id/btn_customView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="customView" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

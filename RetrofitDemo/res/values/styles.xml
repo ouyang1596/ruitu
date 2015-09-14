@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="dialog_activity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Anim_scale</item>
+    </style>
+
+    <style name="Anim_scale" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/scale_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/scale_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/scale_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/scale_out</item>
+    </style>
+
+</resources>
