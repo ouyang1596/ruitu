@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rt_bg_blue"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/public_top_alert" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="恭喜您，预订成功！"
+            android:textColor="@color/rt_green"
+            android:textSize="@dimen/text_size_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/rt_line_between" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="订单号：11111111111111"
+            android:textColor="@color/rt_blue"
+            android:textSize="@dimen/text_size_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单总额："
+                android:textColor="@color/rt_black_one"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="@color/rt_yellow3"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="司机将于指定的时间到达发车地点，请保持通信顺畅！"
+            android:textColor="@color/rt_black_one"
+            android:textSize="@dimen/text_size_10" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="16dp"
+            android:background="@color/rt_line_between" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="包车模式：大巴"
+                    android:textColor="@color/rt_black_one"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="20座中大巴"
+                    android:textColor="@color/rt_black_three"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/order_success_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出发时间：" />
+
+            <TextView
+                style="@style/order_success_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="2015-10-21 11:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/order_success_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返程时间：" />
+
+            <TextView
+                style="@style/order_success_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="2015-10-21 11:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/order_success_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出发地：    " />
+
+            <TextView
+                style="@style/order_success_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="2015-10-21 11:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/order_success_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目的地：    " />
+
+            <TextView
+                style="@style/order_success_style2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="2015-10-21 11:00" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

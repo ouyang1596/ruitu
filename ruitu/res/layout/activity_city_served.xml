@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rt_bg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/public_top_alert" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <com.ruitu365.ruitu.view.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/search_bar_edit_selector"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:hint="请输入关键字"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/search_bar_edit_normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_bar_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="输入城市中文名或拼音"
+                android:textColor="@color/rt_black_three"
+                android:textSize="@dimen/text_size_14" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_hot_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rt_bg_gray"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="40dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="定位城市" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rt_white_radius"
+                        android:gravity="center"
+                        android:text="深圳 " />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热门城市" />
+
+                <GridView
+                    android:id="@+id/gv_hot_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="#00000000"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dp" >
+                </GridView>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" >
+
+                <ListView
+                    android:id="@+id/lv_city"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:divider="@null" />
+
+                <TextView
+                    android:id="@+id/dialog"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/show_head_toast_bg"
+                    android:gravity="center"
+                    android:textColor="#ffffffff"
+                    android:textSize="30.0dip"
+                    android:visibility="invisible" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <com.ruitu365.ruitu.view.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="10dp" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/public_top_alert" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/rt_white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人账户："
+            android:textColor="@color/rt_blue"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蜡笔小新"
+            android:textColor="@color/rt_blue"
+            android:textSize="@dimen/text_size_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/account_next" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="取车信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/rt_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/get" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rt_rect_stroke"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="深大北服务店"
+                android:textColor="@color/rt_black_one"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/txtv_location"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rt_rect_stroke"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="深圳" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/get_put_time" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rt_rect_stroke"
+                android:drawableRight="@drawable/home_page_next"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="07月28日 10：00"
+                android:textColor="@color/rt_black_one"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="还车信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/rt_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/put" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rt_rect_stroke"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="深大北服务店"
+                android:textColor="@color/rt_black_one"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rt_rect_stroke"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="深圳" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/get_put_time" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rt_rect_stroke"
+                android:drawableRight="@drawable/home_page_next"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="07月28日 10：00"
+                android:textColor="@color/rt_black_one"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_choose_car"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@color/rt_yellow4"
+        android:text="去选车"
+        android:textColor="@color/rt_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

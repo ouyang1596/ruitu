@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/public_top_alert"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/rt_blue"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_top_alert_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/imgv_top_alert"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtv_top_alert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:maxWidth="150dp"
+        android:singleLine="true"
+        android:text="睿途"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20" />
+
+    <FrameLayout
+        android:id="@+id/rel_top_alert_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/txtv_top_alert_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="more"
+            android:textColor="@color/rt_white"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgv_top_alert_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</RelativeLayout>

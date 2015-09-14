@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/public_top_alert" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <com.ruitu365.ruitu.view.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/search_bar_edit_selector"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:hint="请输入关键字"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_14"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/search_bar_edit_normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_bar_icon_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="请输入目的地"
+                android:textColor="@color/rt_black_three"
+                android:textSize="@dimen/text_size_14" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" >
+
+        <ListView
+            android:id="@+id/lv_addr_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>
